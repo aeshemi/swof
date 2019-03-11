@@ -2,13 +2,27 @@
 
 namespace SWOF.Api.Repositories
 {
-	public static class DbConnectionExtensions
-	{
-		public static IDbConnection TryOpen(this IDbConnection db)
-		{
-			if (db.State != ConnectionState.Open) db.Open();
+public static class DbConnectionExtensions
+{
 
-			return db;
-		}
-	}
+/****************************************************************************************
+
+Extension to check if database connection is already open and opens it if it is not.
+
+
+INPUT:
+
+IN_db                   Database connection to check
+
+****************************************************************************************/
+//QQQ
+                public static IDbConnection
+TryOpen
+               (this IDbConnection  db)
+{
+if (db.State != ConnectionState.Open) db.Open();
+
+return          db;
+}
+}
 }

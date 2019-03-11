@@ -1,6 +1,20 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
+/****************************************************************************************
+
+SWOF is an API used to generate schedule rotations for engineers.
+
+****************************************************************************************/
+
+/*** CHANGE LOG *************************************************************************
+
+CHANGE LOG:
+
+Formatted to AS standards.
+
+****************************************************************************************/
+
 namespace SWOF.Api
 {
 	public class Program

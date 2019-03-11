@@ -4,14 +4,14 @@ using SWOF.Api.Models;
 
 namespace SWOF.Api.Repositories
 {
-	public interface IScheduleRepository
-	{
-		IEnumerable<ScheduleDetail> GetDetailByRange(DateTime startDate, DateTime endDate);
+public interface IScheduleRepository
+{
+IEnumerable<ScheduleDetail> GetDetailByRange(DateTime startDate, DateTime endDate);
 
-		IEnumerable<ScheduleWithName> GetWithNameByRange(DateTime startDate, DateTime endDate);
+IEnumerable<ScheduleWithName> GetWithNameByRange(DateTime startDate, DateTime endDate);
 
-		IEnumerable<Schedule> GetLastScheduledWeek();
+IEnumerable<Schedule> GetLastScheduledWeek();
 
-		void Save(IEnumerable<Schedule> rotation);
-	}
+void Save(IEnumerable<Schedule> rotation);
+}
 }
